@@ -1,0 +1,118 @@
+@import "./const";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url(./img/bg_images/home-page-img.jpg);
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 217px;
+    margin-bottom: 493px;
+    
+        &__heading {
+            font-family: $FONT;
+            color: white;
+            font-weight: 700;
+            font-size: 64px;
+            line-height: 78px;
+            
+            margin-bottom: 32px;
+        }
+
+        &__description {
+            font-family: $FONT;
+            color: white;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 32px;
+        }
+
+        &__bold {
+            font-weight: 1000;
+        }
+
+        &__button {
+            box-sizing: border-box;
+            height: 48px;
+            width: 234px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+
+            font-family: $FONT;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: white;
+            background: #9C0332;
+
+            margin-top: 44px;
+        }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    height: 300px;
+    width: 379px;
+    border-radius: 16px;
+
+    &_one {
+        background-image: url(./img/bg_images/game_1.jpg);
+        background-size: cover;
+    }
+
+    &_two {
+        background-image: url(./img/bg_images/game_2.jpg);
+        background-size: cover;
+    }
+
+    &_three {
+        background-image: url(./img/bg_images/game_3.jpg);
+        background-size: cover;
+    }
+
+    &__box_title {
+        font-family: $FONT;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: white;
+
+        padding-left: 32px;
+        padding-bottom: 32px;
+    }
+
+   
+
+ 
+}
+
+
+
+
+
+    
