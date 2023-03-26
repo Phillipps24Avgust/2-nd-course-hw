@@ -66,7 +66,7 @@
 
 // задание 9.1
 
-// user['city Of Residence'] = 'Владивосток';
+// user['city of residence'] = 'Владивосток';
 // console.log(user); // проверка
 
 // задание 9.2
@@ -76,7 +76,7 @@
 
 // задание 9.3
 
-// delete user.cityOfResidence;
+// delete user['city of residence'];
 // console.log(user); // проверка
 
 // задание 9.4
