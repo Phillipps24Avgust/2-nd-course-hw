@@ -66,7 +66,7 @@
 
 // задание 9.1
 
-// user.cityOfResidence = "Владивосток";
+// user['city Of Residence'] = 'Владивосток';
 // console.log(user); // проверка
 
 // задание 9.2
@@ -88,4 +88,6 @@
 
 // let greeting = prompt("Напишите своё имя");
 // alert(`Привет, ${greeting}!`)
+
+
 
