@@ -51,6 +51,16 @@
   background: #9C0332;
   margin-top: 44px;
 }
+.header__button_hovered:hover {
+  background-color: #EB443F;
+  transition: 0.8s;
+  background-image: url(./img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right 25px;
+}
+.header__button_hovered:not(:hover) {
+  transition: 0.8s;
+}
 
 .main {
   display: flex;
@@ -88,6 +98,12 @@
   color: white;
   padding-left: 32px;
   padding-bottom: 32px;
+}
+.game__box_hovered:hover {
+  transition: 0.8s;
+  background-image: url(./img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 16px right 50px;
 }
 
 @media (min-width: 375px) and (max-width: 480px) {

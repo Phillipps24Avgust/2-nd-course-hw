@@ -61,6 +61,59 @@
 //     alert('В году только 12 месяцев, которые также не могут быть дробными! При введении названия месяца вместо его номера вы также увидите эту ошибку!')
 // }
 
+// дополнительные задания
+
+// задание 7
+
+// let typeAnyNumber = Number(prompt('Вбейте любое целое число'));
+
+// if (typeAnyNumber % 2 === 0 && Number.isInteger(typeAnyNumber) === true) {
+//     alert('Вы ввели чётное число!');
+// } else if (typeAnyNumber % 2 !== 0 && Number.isInteger(typeAnyNumber) === true) {
+//     alert('Вы ввели нечётное число!');
+// } else {
+//     alert('Введите целое число!');
+// }
+
+// задание 8
+
+// let clientOS = Number(prompt('Пожалуйста, укажите 0, если вы пользователь IOS, и 1, если вы пользователь Android'))
+
+// if (clientOS === 0) {
+//     console.log('Установите версию приложения для IOS по ссылке: ссылка');
+// } else if (clientOS === 1) {
+//     console.log('Установите версию приложения для Android по ссылке: ссылка');
+// } else {
+//     console.log('Извините, но мы не работаем с другими ОС, кроме IOS или Android!');;
+// }
+
+// задание 9
+
+// let clientOS = Number(prompt('Пожалуйста, укажите 0, если вы пользователь IOS, и 1, если вы пользователь Android'));
+// let currentYear = Number(prompt('Пожалуйста, укажите также год выпуска устройства'));
+
+// if (clientOS === 0 && currentYear >= 2015) {
+//     console.log('Установите версию приложения для IOS по ссылке: ссылка');
+// } else if (clientOS === 0 && currentYear < 2015 && currentYear >= 2009) {
+//     console.log('Установите облегчённую версию приложения для IOS по ссылке: ссылка');
+// } else if (clientOS === 1 && currentYear >= 2015) {
+//     console.log('Установите версию приложения для Android по ссылке: ссылка');
+// } else if (clientOS === 1 && currentYear < 2015 && currentYear >= 2008) {
+//     console.log('Установите облегчённую версию приложения для Android по ссылке: ссылка');
+// } else {
+//     if (clientOS === 0 && currentYear < 2009) {
+//         console.log('Версии IOS такого года нет, потому что первый Iphone был выпущен только в 2009 году');
+//     } else if (clientOS === 1 && currentYear < 2008) {
+//         console.log('Версии Android такого года нет, потому что первый Android был выпущен только в 2008 году');
+//     }
+// }
+
+
+
+
+
+
+
 
 
 
