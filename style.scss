@@ -1,4 +1,4 @@
-@import "./const";
+@import './const';
 
 * {
     margin: 0;
@@ -11,6 +11,7 @@
 
 .center {
     padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 
@@ -105,11 +106,9 @@
         padding-left: 32px;
         padding-bottom: 32px;
     }
-
-   
-
- 
 }
+
+@import 'mobile';
 
 
 

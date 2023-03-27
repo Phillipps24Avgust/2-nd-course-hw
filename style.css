@@ -9,6 +9,7 @@
 
 .center {
   padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -87,4 +88,35 @@
   color: white;
   padding-left: 32px;
   padding-bottom: 32px;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__heading {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .header__description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .game {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
