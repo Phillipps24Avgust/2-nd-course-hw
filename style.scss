@@ -1,4 +1,4 @@
-@import "./const";
+@import './const';
 
 * {
     margin: 0;
@@ -11,6 +11,7 @@
 
 .center {
     padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
 
 
@@ -59,6 +60,19 @@
             background: #9C0332;
 
             margin-top: 44px;
+
+            &_hovered:hover {
+                background-color:#EB443F;
+                transition: 0.8s;
+                background-image: url(./img/Vector.svg);
+                background-repeat: no-repeat;
+                background-position: bottom right 25px ;
+            }
+
+            &_hovered:not(:hover) {
+                transition: 0.8s;
+            }
+
         }
 }
 
@@ -106,10 +120,15 @@
         padding-bottom: 32px;
     }
 
-   
-
- 
+   &__box_hovered:hover {
+        transition: 0.8s;
+        background-image: url(./img/Vector.svg);
+        background-repeat: no-repeat;
+        background-position: bottom 16px right 50px ;
+   }
 }
+
+@import 'mobile';
 
 
 

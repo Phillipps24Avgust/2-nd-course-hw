@@ -9,6 +9,7 @@
 
 .center {
   padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
 
 .header {
@@ -50,6 +51,16 @@
   background: #9C0332;
   margin-top: 44px;
 }
+.header__button_hovered:hover {
+  background-color: #EB443F;
+  transition: 0.8s;
+  background-image: url(./img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right 25px;
+}
+.header__button_hovered:not(:hover) {
+  transition: 0.8s;
+}
 
 .main {
   display: flex;
@@ -87,4 +98,41 @@
   color: white;
   padding-left: 32px;
   padding-bottom: 32px;
+}
+.game__box_hovered:hover {
+  transition: 0.8s;
+  background-image: url(./img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 16px right 50px;
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .center {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__heading {
+    text-align: center;
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .header__description {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .game {
+    width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */
