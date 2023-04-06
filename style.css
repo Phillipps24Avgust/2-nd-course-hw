@@ -3,22 +3,24 @@
   padding: 0;
 }
 
-.body {
-  background-image: url(./img/bg_images/home-page-img.jpg);
-}
-
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
 }
 
-.header {
+.background-image-top {
+  background-image: url(./img/bg_images/home-page-img.jpg);
+  background-size: contain;
+}
+
+.header-box {
   display: flex;
   flex-direction: column;
-  margin-top: 217px;
-  margin-bottom: 493px;
+  height: 1024px;
+  box-sizing: border-box;
+  padding-top: 217px;
 }
-.header__heading {
+.header-box__heading {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 700;
@@ -26,17 +28,17 @@
   line-height: 78px;
   margin-bottom: 32px;
 }
-.header__description {
+.header-box__description {
   font-family: "Montserrat", sans-serif;
   color: white;
   font-weight: 300;
   font-size: 18px;
   line-height: 32px;
 }
-.header__bold {
+.header-box__bold {
   font-weight: 1000;
 }
-.header__button {
+.header-box__button {
   box-sizing: border-box;
   height: 48px;
   width: 234px;
@@ -51,14 +53,14 @@
   background: #9C0332;
   margin-top: 44px;
 }
-.header__button_hovered:hover {
+.header-box__button_hovered:hover {
   background-color: #EB443F;
   transition: 0.8s;
   background-image: url(./img/Vector.svg);
   background-repeat: no-repeat;
   background-position: bottom right 25px;
 }
-.header__button_hovered:not(:hover) {
+.header-box__button_hovered:not(:hover) {
   transition: 0.8s;
 }
 
@@ -68,6 +70,7 @@
   gap: 32px;
   padding-top: 128px;
   padding-bottom: 128px;
+  background-image: url(./img/bg_images/secondBlockBackground.png);
 }
 
 .game {
@@ -106,22 +109,86 @@
   background-position: bottom 16px right 50px;
 }
 
+.background-image-bottom {
+  background-image: url(./img/block_images/thirdBlockBackground.png);
+}
+
+.seasons-box {
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seasons-box__left {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.seasons-box__left-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  line-height: 59px;
+  line-height: 100%;
+  color: white;
+}
+.seasons-box__left-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+.seasons-box__left-button {
+  height: 49px;
+  width: 234px;
+  background-color: #9C0332;
+  border: none;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+.seasons-box__left-button_hovered:hover {
+  background-color: #EB443F;
+  transition: 0.8s;
+  background-image: url(./img/Vector.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right 25px;
+}
+.seasons-box__left-button_hovered:not(:hover) {
+  transition: 0.8s;
+}
+.seasons-box__right {
+  height: 333px;
+  width: 484px;
+  background-image: url(./img/block_images/secondBlockImage.png);
+}
+
 @media (min-width: 375px) and (max-width: 480px) {
   .center {
     padding-right: 16px;
     padding-left: 16px;
   }
   .header {
+    height: 735px;
+    background-image: url(./img/bg_images/home-page-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .header-box {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .header__heading {
+  .header-box__heading {
     text-align: center;
     font-size: 32px;
     line-height: 39px;
   }
-  .header__description {
+  .header-box__description {
     text-align: center;
     font-size: 14px;
     line-height: 22px;
@@ -134,5 +201,37 @@
   }
   .game {
     width: 343px;
+  }
+  .seasons-box {
+    height: 653px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 51px;
+  }
+  .seasons-box__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .seasons-box__left-heading {
+    font-size: 32px;
+    line-height: 39px;
+  }
+  .seasons-box__left-text {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .seasons-box__right-mobile {
+    height: 236px;
+    width: 344px;
+    background-image: url(./img/block_images/secondBlockImageMobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 85px;
   }
 }/*# sourceMappingURL=style.css.map */
