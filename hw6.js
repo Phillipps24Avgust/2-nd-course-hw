@@ -74,6 +74,53 @@
 // arrSplited = arrSplited.join("");
 // console.log(arrSplited);
 
+// задание 9
+
+// let array = [[1, 2, 3,],[4, 5, 6]];
+
+// array = array.flat();
+
+// console.log(array);
+
+// задание 10
+
+// let array = [1, 5, 6, 2, 8, 6, 7, 9, 4];
+
+// let arrTrunkated = array.length - 1;
+
+// for (let i = 0; i < arrTrunkated; i++) {
+//     console.log(array[i] + array[i + 1]);
+// }
+
+// задание 11
+
+// let array = [2, 4, 8, 16];
+
+// arraySquared = array.map(array => array ** 2);
+
+// console.log(arraySquared);
+
+// задание 12
+
+// let array = ['слово', '', 'слог', 'длинное предложение', 'буква'];
+
+// let arrayItemLength = array.map(array => array.length);
+
+// console.log(arrayItemLength);
+
+// задание 13
+
+// let array = [5, 0, 4, 19, 5, -5, 0, -4, -19, -5];
+
+// let negatify = array.filter(array => {return array < 0;})
+
+// console.log(negatify);
+
+
+
+
+
+
 
 
 
